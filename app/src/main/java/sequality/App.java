@@ -10,5 +10,21 @@ public class App {
 
   public static void main(String[] args) {
     System.out.println(new App().getGreeting());
+    
+    int a = 2;
+    int b = 3;
+    int start = 1;
+    int end = 10;
+    Calculate2 calc2 = new Calculate2();
+
+    System.out
+        .println("Sum of " + a + " and " + b + " is " + calc2.sum(a, b) + ".Average is " + calc2.average(a, b) + ".");
+
+    System.out.println("Sum of " + start + " to " + end + " is " + calc2.factorial(start, end) + ".Average is "
+        + calc2.fac_ave(start, end) + ".");
+
+    System.out.println("Sum of add of " + start + " to " + end + " is " + calc2.odd(start, end) + ".Sum of even is "
+        + calc2.even(start, end) + ".");
+
   }
 }
